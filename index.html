@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pierda - Pepel - Tijera</title>
+</head>
+<body>
+    <section class="container">
+        <h3>Desea Jugar?</h3>
+        <ol>
+            <li>Piedra</li>
+            <li>Papel</li>
+            <li>Tijera</li>
+        </ol>
+        <br>
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td><label for="jugador1">Jugador 1</label></td>
+                    <td><input id="jugador1" type="number" name="jugador1" placeholder="Numero Aleatorio" disabled></td>
+                </tr>
+                <tr>
+                    <td><label for="jugador2">Jugador 2</label></td>
+                    <td><input id="jugador2" type="number" name="jugador2" placeholder="Numero Aleatorio" disabled></td>
+                </tr>
+                <tr>
+                    <td><label for="ganador">Ganador</label></td>
+                    <td><input id="ganador" type="text" name="ganador" placeholder="Numero Ganador" disabled></td>
+                </tr>
+            </table>
+            <div>
+                <input type="text" name="inputSi" value="si" hidden>
+                <input id="Si" type="submit" value="Si" class="botones" onclick="jugar()">
+                <input id="No" type="submit" value="No" class="botones" onclick="detener()">
+            </div>
+        </form>
+        <h3>Listado numero de juegos por jugador</h3>
+        <table id="table">
+            <thead>
+                <tr>
+                    <td><b>Item</b></td>
+                    <td><b>Ganador</b></td>
+                    <td><b>Opcion</b></td>
+                </tr>
+            </thead>
+            
+        </table>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>
